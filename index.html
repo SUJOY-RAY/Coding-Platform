@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index-style.css">
+  <title>Multipane Layout</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <h1>Mycode Academia</h1>
+    <div class="nav-links">
+      <a href="problem-list.php">Problems</a>
+      <a href="#code-
+      .0editor">Code</a>
+      <a href="#output">Output</a>
+    </div>
+  </div>
+
+  <!-- hide the content buttons -->
+  <div class="hide-buttons">
+    <button onclick="togglePanel('problem-description')">Hide Problem</button>
+    <button onclick="togglePanel('code-editor')">Hide Code Editor</button>
+    <button onclick="togglePanel('output')">Hide Output</button>
+  </div>
+
+  <div class="container">
+    <!-- Left pane for problem description -->
+    <div class="pane problem-description">
+      <h2>Problem Description</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, blanditiis animi magnam nulla molestiae
+        ducimus sed expedita architecto labore nisi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+        commodi sint nisi delectus eum maiores!</p>
+    </div>
+
+    <!-- Center pane for code editor -->
+    <div class="pane code-editor">
+      <h2>Code editor</h2>
+      <textarea name="" id="code" cols="30" rows="10" placeholder="Write the code here"></textarea>
+    </div>
+
+    <!-- Right pane for code output -->
+    <div class="pane output">
+      <h2>Output</h2>
+      <pre id="" output>Your output will appear here</pre>
+    </div>
+  </div>
+
+  <script src="index-script.js"></script>
+</body>
+
+</html>

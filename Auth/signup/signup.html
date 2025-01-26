@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script>
+        function validatePasswords() {
+            var password = document.getElementById("Password").value;
+            var confirmPassword = document.getElementById("ConfirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long!");
+                return false;
+            }
+
+            return true;
+        }
+    </script> -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="top">Register</h1>
+        <form action="signup.php" method="POST" onsubmit="return validatePasswords()">
+            <input type="text" id="UserName" name="UserName" placeholder="Enter UserName" required>
+            <input type="email" id="GMAIL" name="GMAIL" placeholder="Enter Gmail" required>
+            <input type="password" id="Password" name="Password" placeholder="Enter Password" required>
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
